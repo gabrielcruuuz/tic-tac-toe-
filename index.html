@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+
+		<script src="jquery/jquery-3.2.1.js"></script>
+		<script src="jogo.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	</head>
+
+	<body>
+
+	<div id="pagina_inicial" align="center">
+		<table width="600px">
+			<tbody>
+			<tr>
+				<td align="center" colspan="3">JOGO DA VELHA </td>
+			</tr>
+
+				<tr>
+					<td align="center">
+						<img src="imagens/jogador_1.png">
+						<br />
+						<input id="jogador1" type="text" placeholder="Apelido jogador 1" maxlength="15" />
+					</td>
+
+					<td align="center">
+						<img id="btn_inicio" src="imagens/iniciar.png">
+						<br />
+					</td>
+
+					<td align="center">
+						<img src="imagens/jogador_2.png">
+						<br />
+						<input id="jogador2" type="text" placeholder="Apelido jogador 2" maxlength="15" />
+					</td>
+
+				</tr>
+
+
+			</tbody>
+
+
+		</table>
+
+		<div>
+			<table>
+				<td>
+					<title>
+						
+					</title>
+				</td>
+			</table>
+
+		</div>
+
+
+	</div>
+
+	<div id="palco_jogo">
+		<div>
+			<img src="imagens/jogador_1.png" / >	
+			<br / >
+			<span id="nome_jogador1"></span>	
+		</div>
+
+		<div>
+			<table border="0">
+				<tr>
+					<td class="jogada" id="a-1"></td>
+					<td class="jogada" id="a-2"></td>
+					<td class="jogada" id="a-3" style="	border-bottom: 1px solid red; border-right: 0px;"></td>
+				</tr>
+
+				<tr>
+					<td class="jogada" id="b-1"></td>
+					<td class="jogada" id="b-2"></td>
+					<td class="jogada" id="b-3" style="	border-bottom: 1px solid red; border-right: 0px;"></td>
+				</tr>
+
+				<tr>	
+					<td class="jogada" id="c-1" style="	border-bottom: 0px ;"></td>
+					<td class="jogada" id="c-2" style="	border-bottom: 0px;"></td>
+					<td class="jogada" id="c-3" style="	border-bottom: 0px; border-right: 0px;"></td>
+				</tr>
+
+			</table>
+		</div>
+
+		<div>
+			<img src="imagens/jogador_2.png" / >	
+			<br / >
+			<span id="nome_jogador2"></span>		
+		</div>
+		<br/>
+		<div id="btn_reinicio" class="reiniciar">Reiniciar</div>
+		
+	</div>
+	</body>
+</html>
